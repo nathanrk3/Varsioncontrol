@@ -1,3 +1,4 @@
+# Manato Igawa
 
 def encode(data):
     pw_list = [int(digit) for digit in data]
@@ -32,12 +33,12 @@ def main():
 
         if opt == 1:
             pw = input('Please enter your password to encode: ')
-            encode(pw)
+            encoded_pw = encode(pw)
             print('Your password has been encoded and stored!')
             print()
 
         elif opt == 2:
-            print(f'The encoded password is {encode(pw)}, and the original password is {decode(pw)}.')
+            print(f'The encoded password is {encode(pw)}, and the original password is {decode(encoded_pw)}.')
             print()
 
         elif opt == 3:
